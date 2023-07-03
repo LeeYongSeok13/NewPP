@@ -1,5 +1,5 @@
 header {
-    position: relative;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 1rem;
@@ -33,6 +33,21 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 1.2rem;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 0;
+}
+
+section:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+section .about-self::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .Info {
@@ -74,6 +89,40 @@ header nav ul li a {
     transform: translateX(-50%);
     color: white;
     animation: upDown 1s ease-in-out infinite;
+}
+
+.About .title{
+    margin-bottom: 3rem;
+}
+
+.About .title h4 {
+    font-size: 1.35rem;
+    color: #1E90FF;
+    position: relative;
+}
+
+.About .title h2 {
+    font-size: 3.5rem;
+}
+
+.About .about-self .left {
+    width: 50%;
+    float: left;
+}
+
+.About .about-self .left img {
+    max-width: 100%;
+}
+
+.About .about-self .right {
+    width: 50%;
+    float: left;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.About .about-self .right i {
+    font-size: 1.5rem;
 }
 
 @keyframes upDown {
