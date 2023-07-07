@@ -1,8 +1,17 @@
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 1rem;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header.on {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
 }
 
 header .container {
@@ -124,6 +133,7 @@ section .about-self::after {
 .About .about-self .right i {
     font-size: 1.5rem;
 }
+
 
 @keyframes upDown {
     0% {
